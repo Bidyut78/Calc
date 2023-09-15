@@ -5,45 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./calc.css" />
-    <title>Calculator - By Code Traversal</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="calculator">
-        <input type="text" id="inputBox" placeholder="0" />
-        <div>
-          <button class="button operator">AC</button>
-          <button class="button operator">DEL</button>
-          <button class="button operator">%</button>
-          <button class="button operator">/</button>
-        </div>
-        <div>
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button operator">*</button>
-        </div>
-        <div>
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button operator">-</button>
-        </div>
-        <div>
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button operator">+</button>
-        </div>
+    <title>Calculator</title>
 
-        <div>
-          <button class="button">00</button>
-          <button class="button">0</button>
-          <button class="button">.</button>
-          <button class="button equalBtn">=</button>
-        </div>
-      </div>
-    </div>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="container">
+	<header>
+		<nav>
+			<div class="time">
+				<h1>
+					<span id="hrs"></span>
+					<span>:</span>
+					<span id="mins"></span>
+					<span id="ampm"></span>
+				</h1>
+			</div>
+			<ul class="navMenu">
+				<li class="item">
+					<span class="material-symbols-outlined">
+						signal_cellular_alt
+					</span>
+				</li>
+				<li class="item">
+					<span class="material-symbols-outlined">
+						network_wifi_2_bar
+					</span>
+				</li>
+				<li class="item">
+					<span class="material-symbols-outlined battery">
+						battery_5_bar
+					</span>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="toggleBtn">
+		<div class="modeBtn">
+			<span class="material-symbols-outlined modeIcon" id="light">
+				light_mode
+			</span>
+			<span class="material-symbols-outlined modeIcon active" id="dark">
+				dark_mode
+			</span>
+		</div>
+	</section>
+
+	<form action="" class="form">
+		<section class="display">
+			<input type="text" readonly name="display" placeholder="Bidyut 🤎 Anita" />
+		</section>
+
+		<section class="buttons" id="buttonsWrapper">
+			<input type="button" value="AC" class="topBtns" />
+			<input type="button" value="DEL" class="topBtns" />
+			<input type="button" value="&percnt;" class="topBtns" />
+			<input type="button" value="&divide;" class="operators" />
+			<input type="button" value="7" />
+			<input type="button" value="8" />
+			<input type="button" value="9" />
+			<input type="button" value="&times;" class="operators" />
+			<input type="button" value="4" />
+			<input type="button" value="5" />
+			<input type="button" value="6" />
+			<input type="button" value="&minus;" class="operators" />
+			<input type="button" value="3" />
+			<input type="button" value="2" />
+			<input type="button" value="1" />
+			<input type="button" value="&plus;" class="operators" />
+			<input type="button" value="0" />
+			<input type="button" value="00" />
+			<input type="button" value="." />
+			<input type="button" value="=" class="operators" />
+		</section>
+	</form>
+</div>
 
     <script src="./calc.js"></script>
   </body>
